@@ -1,0 +1,283 @@
+/*
+CSS SUD - Proyecto Coderhouse Desarrollo Web
+© Nicolás Chiari 2022
+*/
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main styles */
+body {
+  background-color: #fefeff;
+}
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #364755;
+}
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #364755;
+}
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #364755;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2a3844;
+}
+ul,
+ol {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  list-style: none;
+  color: #364755;
+}
+button,
+input[type="submit"] {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  width: auto;
+  padding: 0.8em 2rem;
+  border: 1px solid #e95600;
+  border-radius: 5px;
+  background-color: #eb6619;
+  color: #fff;
+  transition: 300ms;
+  cursor: pointer;
+  box-shadow: 0px 12px 24px -17px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 24px -17px rgba(0, 0, 0, 0.5);
+}
+button:hover,
+input[type="submit"]:hover {
+  border: 1px solid #ffa200;
+  background-color: #f8ad2d;
+  color: #2a3844;
+  transition: 300ms;
+}
+input,
+textarea {
+  background-color: #fefeff;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #2a3844;
+  font-size: 1rem;
+  border: none;
+  margin-top: 0.5rem;
+}
+input:focus,
+textarea:focus {
+  outline-width: 0;
+}
+a {
+  text-decoration: none;
+}
+form {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2a3844;
+}
+
+/* Main containers styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Index styles */
+.header {
+  background: center / cover no-repeat url(../images/home-banner.jpg);
+  height: 100vh;
+}
+/* Index navbar styles */
+.navbar {
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+}
+.navbar__logo {
+  width: 20%;
+}
+.navbar__logo img {
+  width: 130px;
+}
+.navbar__menu {
+  display: flex;
+  width: 80%;
+  justify-content: end;
+}
+.navbar__links li {
+  display: inline-block;
+  margin: 10px;
+  margin-right: 2rem;
+}
+.navbar__links a {
+  margin: 10px;
+  color: #2a3844;
+  transition: 100ms ease;
+}
+.navbar__links a:hover {
+  border-bottom: 2px solid #2a3844;
+  transition: 100ms ease;
+}
+/* Hero message styles */
+.heroHeader {
+  padding-top: 3.8rem;
+}
+.heroHeader__message {
+  height: 100%;
+}
+.heroHeader__message p {
+  padding: 2.5rem 0;
+}
+.col--left {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col--left p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+.col--right {
+  width: 57%;
+}
+
+/* Default form section */
+.formSection {
+  align-items: flex-start;
+  padding: 3rem 0;
+  gap: 1rem;
+}
+.formSection p {
+  padding: 2rem 0;
+}
+.formSection__col1 {
+  width: 40%;
+  padding-top: 1rem;
+}
+.formSection__col2 {
+  width: 60%;
+  padding: 2em 3rem;
+  background-color: #364755;
+  border-radius: 8px;
+  box-shadow: 7px 5px 30px 0 rgb(159 159 159 / 15%);
+}
+.formSection__col2 div {
+  padding: 0.5rem 0;
+}
+.formSection label {
+  color: #fff;
+}
+.formSection__labels {
+  display: flex;
+  flex-direction: column;
+}
+.formSection input[type="submit"] {
+  padding: 0.8em 4rem;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #364755;
+  color: #fff;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer__main {
+  padding: 2.5rem 0;
+  align-items: flex-start;
+}
+.footer img {
+  width: 40%;
+}
+.footer__col1 p {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.footer__col2 a {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  transition: 100ms;
+}
+.footer__col2 a:hover {
+  border-bottom: 1px solid #fff;
+  transition: 100ms;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+.footer i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.footer__social__links {
+  background-color: #eb6619;
+  border: 1px solid #e95600;
+  padding: 0.8rem;
+  border-radius: 20%;
+  transition: 300ms;
+}
+.footer__social__links:hover {
+  border: 1px solid #ffa200;
+  background-color: #f8ad2d;
+  color: #000;
+  transition: 300ms;
+}
+.footer__sub {
+  padding: 0.7rem 0;
+  background-color: #1c262d;
+  text-align: center;
+}
+.footer__sub p {
+  color: #b9bec1;
+  font-size: 0.8rem;
+}
+.footer__sub a {
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 100ms;
+}
+.footer__sub a:hover {
+  border-bottom: 1px solid #fff;
+  transition: 100ms;
+}
