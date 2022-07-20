@@ -16,6 +16,31 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2rem;
+}
+#mainPages {
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header"
+    "navbar"
+    "content"
+    "form"
+    "sub-footer"
+    "footer";
+}
+#contacPage {
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "header"
+    "navbar"
+    "content"
+    "sub-footer"
+    "footer";
+}
+main {
+  grid-area: content;
 }
 h1 {
   font-family: "Nunito", sans-serif;
@@ -113,16 +138,34 @@ form {
 
 /* Index styles */
 .header {
+  grid-area: header;
   background: center / cover no-repeat url(../images/home-banner.jpg);
   height: 100vh;
 }
+@media screen (min-width: 1024px) {
+  .header {
+    grid-area: header;
+    background: center / cover no-repeat url(../images/home-banner.jpg);
+    height: 100vh;
+  }
+}
 /* Index navbar styles */
 .navbar {
+  grid-area: navbar;
   display: flex;
-  padding: 2rem 0;
+  flex-direction: column;
+  padding: 1rem 0;
   align-items: center;
-  justify-content: space-evenly;
-  position: sticky;
+  justify-content: center;
+}
+@media screen (min-width: 1024px) {
+  .navbar {
+    grid-area: navbar;
+    display: flex;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 .navbar__logo {
   width: 20%;
@@ -132,23 +175,41 @@ form {
 }
 .navbar__menu {
   display: flex;
-  width: 80%;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen (min-width: 1024px) {
+  .navbar__menu {
+    display: flex;
+    width: 80%;
+    justify-content: end;
+  }
 }
 .navbar__links li {
-  display: inline-block;
+  display: block;
   margin: 10px;
   margin-right: 2rem;
+  text-align: center;
+}
+@media screen (min-width: 1024px) {
+  .navbar__links li {
+    display: inline-block;
+    margin: 10px;
+    margin-right: 2rem;
+  }
 }
 .navbar__links a {
   margin: 10px;
   color: #2a3844;
   transition: 100ms ease;
 }
-.navbar__links a:hover {
-  border-bottom: 2px solid #2a3844;
-  transition: 100ms ease;
+@media screen (min-width: 1024px) {
+  navbar__links a:hover {
+    border-bottom: 2px solid #2a3844;
+    transition: 100ms ease;
+  }
 }
+
 /* Hero message styles */
 .heroHeader {
   padding-top: 3.8rem;
@@ -174,6 +235,9 @@ form {
 }
 
 /* Default form section */
+.form {
+  grid-area: form;
+}
 .formSection {
   align-items: flex-start;
   padding: 3rem 0;
@@ -209,6 +273,7 @@ form {
 
 /* Footer styles */
 .footer {
+  grid-area: footer;
   background-color: #364755;
   color: #fff;
   margin-top: 2rem;
@@ -264,7 +329,9 @@ form {
   color: #000;
   transition: 300ms;
 }
+/* Sub Footer styles */
 .footer__sub {
+  grid-area: sub-footer;
   padding: 0.7rem 0;
   background-color: #1c262d;
   text-align: center;
