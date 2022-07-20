@@ -223,6 +223,7 @@ form {
 .footer__main {
   padding: 2.5rem 0;
   align-items: flex-start;
+  justify-content: space-evenly;
 }
 .footer img {
   width: 40%;
