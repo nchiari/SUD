@@ -142,7 +142,7 @@ form {
   background: center / cover no-repeat url(../images/home-banner.jpg);
   height: 100vh;
 }
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
   .header {
     grid-area: header;
     background: center / cover no-repeat url(../images/home-banner.jpg);
@@ -158,7 +158,7 @@ form {
   align-items: center;
   justify-content: center;
 }
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
   .navbar {
     grid-area: navbar;
     display: flex;
@@ -178,7 +178,7 @@ form {
   flex-direction: column;
   justify-content: center;
 }
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
   .navbar__menu {
     display: flex;
     width: 80%;
@@ -191,7 +191,7 @@ form {
   margin-right: 2rem;
   text-align: center;
 }
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
   .navbar__links li {
     display: inline-block;
     margin: 10px;
@@ -203,7 +203,7 @@ form {
   color: #2a3844;
   transition: 100ms ease;
 }
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
   navbar__links a:hover {
     border-bottom: 2px solid #2a3844;
     transition: 100ms ease;
