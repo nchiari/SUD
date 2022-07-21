@@ -142,28 +142,13 @@ form {
   background: center / cover no-repeat url(../images/home-banner.jpg);
   height: 100vh;
 }
-@media (min-width: 1024px) {
-  .header {
-    grid-area: header;
-    background: center / cover no-repeat url(../images/home-banner.jpg);
-    height: 100vh;
-  }
-}
 /* Index navbar styles */
 .navbar {
   grid-area: navbar;
   display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
+  padding: 2rem 0;
   align-items: center;
-  justify-content: center;
-}
-@media (min-width: 1024px) {
-  .navbar {
-    display: flex;
-    padding: 2rem 0;
-    justify-content: space-evenly;
-  }
+  justify-content: space-evenly;
 }
 .navbar__logo {
   width: 20%;
@@ -173,14 +158,8 @@ form {
 }
 .navbar__menu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (min-width: 1024px) {
-  .navbar__menu {
-    width: 80%;
-    justify-content: end;
-  }
+  width: 80%;
+  justify-content: end;
 }
 .navbar__links li {
   display: block;
@@ -188,21 +167,19 @@ form {
   margin-right: 2rem;
   text-align: center;
 }
-@media (min-width: 1024px) {
-  .navbar__links li {
-    display: inline-block;
-  }
+.navbar__links li {
+  display: inline-block;
+  margin: 10px;
+  margin-right: 2rem;
 }
 .navbar__links a {
   margin: 10px;
   color: #2a3844;
   transition: 100ms ease;
 }
-@media (min-width: 1024px) {
-  navbar__links a:hover {
-    border-bottom: 2px solid #2a3844;
-    transition: 100ms ease;
-  }
+.navbar__links a:hover {
+  border-bottom: 2px solid #2a3844;
+  transition: 100ms ease;
 }
 
 /* Hero message styles */
