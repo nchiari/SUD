@@ -5,37 +5,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6550abb83b.js" crossorigin="anonymous"></script>
-    <title>SUD • Digitaliza tu vida</title>
+    <title>Servicios • SUD • Digitaliza tu vida</title>
   </head>
-  <body class="mainPages">
+  <body id="pagesLayout">
     <!-- Header start -->
-    <header>
+    <header class="header">
       <!-- Nav menu -->
-      <nav>
-        <!-- Logo -->
-        <div>
+      <nav class="container navbar">
+        <!-- Logo header -->
+        <div class="navbar__logo">
           <a href="../index.html"><img src="../images/SUD_logo.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" /></a>
         </div>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./cursos.html">Cursos</a></li>
-          <li><a href="./sobre-mi.html">Sobre mi</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+        <!-- Nav bar menu and buttons -->
+        <div class="navbar__menu">
+          <ul class="navbar__links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./cursos.html">Cursos</a></li>
+            <li><a href="./sobre-mi.html">Sobre mi</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
         <!-- Call to action button -->
-        <div>
-          <a href="./contacto.html"><button>Reserva una cita</button></a>
+        <div class="navbar__button">
+          <a href="./contacto.html">
+            <button>Reserva una cita</button>
+          </a>
         </div>
       </nav>
-      <!-- Hero container (background img) -->
-      <div class="container">
-        <div>
+      <!-- Hero banner -->
+      <section class="banner banner--courses">
+        <div class="container bannerText">
           <h1>Mis servicios</h1>
           <p>Conseguir la organización, el orden y el tiempo libre que quieres para tu vida está al alcance de tu mano. Literalmente.</p>
         </div>
@@ -46,10 +51,11 @@
     <!-- Main content start -->
     <main>
       <!-- Services section -->
-      <section>
-        <!-- Service 1 -->
+      <section class="container services">
         <h2>Comencemos a trabajar juntos</h2>
-        <div>
+        <div class="row services-grid">
+        <!-- Service 1 -->
+        <div class="service-box">
           <img src="../images/personalizacion.png" alt="Digitalización a tu medida" />
           <h2>Digitalización a tu medida</h2>
           <p>Texto que explica sobre el servicio personalizado.</p>
@@ -58,7 +64,7 @@
           </p>
         </div>
         <!-- Service 2 -->
-        <div>
+        <div class="service-box">
           <img src="../images/cursos.png" alt="Cursos online" />
           <h2>Cursos online</h2>
           <p>Texto que explica los cursos disponibles.</p>
@@ -67,7 +73,7 @@
           </p>
         </div>
         <!-- Service 3 -->
-        <div>
+        <div class="service-box">
           <img src="../images/plantillas.png" alt="Plantillas útiles" />
           <h2>Plantillas útiles</h2>
           <p>Texto que explica las plantillas disponibles.</p>
@@ -75,71 +81,87 @@
             <a href="#"><button>Descarga nuestras plantillas</button></a>
           </p>
         </div>
+      </div>
       </section>
+  
       <!-- Method section -->
-      <section>
-        <div><h2>¿Cómo te ayudaré?</h2></div>
-        <!-- Step 1 -->
-        <div>
-          <div><span>1.</span></div>
-          <div>
-            <h3>Me cuentas lo que necesitas</h3>
-            <p>Dime cuál es tu situación actual y tu objetivo, así podré evaluar qué herramientas digitales puedo utilizar para ayudarte.</p>
+      <section class="container method">
+        <h2>¿Cómo te ayudaré?</h2>
+        <div class="method-grid">
+          <!-- Step 1 -->
+          <div class="method-box">
+            <span>1.</span>
+            <div class="method__text">
+              <h3>Me cuentas lo que necesitas</h3>
+              <p>Dime cuál es tu situación actual y tu objetivo, así podré evaluar qué herramientas digitales puedo utilizar para ayudarte.</p>
+            </div>
           </div>
-        </div>
-        <!-- Step 2 -->
-        <div>
-          <div><span>2.</span></div>
-          <div>
-            <h3>Busco las herramientas indicadas</h3>
-            <p>Empiezo a buscar las herramientas indicadas, armo y presento el plan de acción.</p>
+          <!-- Step 2 -->
+          <div class="method-box">
+            <span>2.</span>
+            <div class="method__text">
+              <h3>Busco las herramientas indicadas</h3>
+              <p>Empiezo a buscar las herramientas indicadas, armo y presento el plan de acción.</p>
+            </div>
           </div>
-        </div>
-        <!-- Step 3 -->
-        <div>
-          <div><span>3.</span></div>
-          <div>
-            <h3>Te ayudo a aprender y aplicar</h3>
-            <p>Ayudo a la persona a que aprenda las herramientas y cómo sería la mejor manera de aplicarla según sus objetivos.</p>
+          <!-- Step 3 -->
+          <div class="method-box">
+            <span>3.</span>
+            <div class="method__text">
+              <h3>Te ayudo a aprender y aplicar</h3>
+              <p>Ayudo a la persona a que aprenda las herramientas y cómo sería la mejor manera de aplicarla según sus objetivos.</p>
+            </div>
           </div>
-        </div>
-        <!-- Step 4 -->
-        <div>
-          <div><span>4.</span></div>
-          <div>
-            <h3>Sigo tu avance y ajustamos</h3>
-            <p>¿Hay alguna cuestión que te gustaría cambiar? Me las comunicas y buscaré la manera de mejorarlo.</p>
+          <!-- Step 4 -->
+          <div class="method-box">
+            <span>4.</span>
+            <div class="method__text">
+              <h3>Sigo tu avance y ajustamos</h3>
+              <p>¿Hay alguna cuestión que te gustaría cambiar? Me las comunicas y buscaré la manera de mejorarlo.</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- Contact form section -->
-      <section>
-        <div>
-          <h2>¿Ya te has convencido?</h2>
-          <p>Ponte en contacto conmigo y reserva tu primer cita gratis.</p>
-        </div>
-        <div>
-          <form action="#">
-            <div><label for="name">Dime tu nombre</label> <input type="text" name="name" id="name" /></div>
-            <div><label for="email">¿Cuál es tu email?</label> <input type="email" name="email" id="email" /></div>
-            <div><label for="message">¿Cómo te gustaría que te ayude?</label> <textarea name="message" id="message" cols="30" rows="10"></textarea></div>
-            <div><input type="submit" value="Enviar" /></div>
-          </form>
         </div>
       </section>
     </main>
     <!-- Main content end -->
 
+    <!-- Form section -->
+    <article class="container form">
+      <div class="row formSection">
+        <div class="col formSection__col1">
+          <h2>¿Ya te has convencido?</h2>
+          <p>Ponte en contacto conmigo y reserva tu primer cita gratis.</p>
+        </div>
+        <div class="col formSection__col2">
+          <form action="#">
+            <div class="formSection__labels">
+              <input type="text" name="name" id="name" placeholder="Tu nombre" />
+            </div>
+            <div class="formSection__labels">
+              <input type="email" name="email" id="email" placeholder="Tu email" />
+            </div>
+            <div class="formSection__labels">
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="¿Cómo te gustaría que te ayude?"></textarea>
+            </div>
+            <div><input type="submit" value="Enviar" /></div>
+          </form>
+        </div>
+      </div>
+    </article>
+
     <!-- Footer start -->
-    <footer>
+    <footer class="footer">
       <!-- Main footer start -->
-      <div style="background-color: #364755; color: #fff">
+      <section class="container row footer__main">
         <!-- Logo column -->
-        <div>
-          <a href="../index.html"><img src="../images/SUD_logo_footer.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" /></a>
+        <div class="col footer__col1">
+          <a href="../index.html"
+            ><img src="../images/SUD_logo_footer.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" />
+            <p>Digitaliza tu vida</p></a
+          >
         </div>
         <!-- Menu column -->
-        <div>
+        <div class="col footer__col2">
           <h3>Más información</h3>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -150,18 +172,35 @@
           </ul>
         </div>
         <!-- Social links column -->
-        <div>
+        <div class="col footer__col3">
           <h3>Mis canales</h3>
-          <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <ul class="footer__socials">
+            <a href="#" target="_blank" title="Instagram">
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+            </a>
+            <a href="#" target="_blank" title="TikTok">
+              <li>
+                <i class="fa-brands fa-tiktok"></i>
+              </li>
+            </a>
+            <a href="#" target="_blank" title="YouTube">
+              <li>
+                <i class="fa-brands fa-youtube"></i>
+              </li>
+            </a>
+          </ul>
         </div>
-      </div>
+      </section>
       <!-- Main footer end -->
       <!-- Sub-footer start-->
-      <div style="background-color: #1c262d">
-        <p style="color: #fff">Diseño y desarrollo: <a href="https://www.linkedin.com/in/nicochiari/" target="_blank">Nico Chiari</a></p>
-      </div>
+      <section class="col footer__sub">
+        <p>
+          Diseño y desarrollo •
+          <a href="https://www.linkedin.com/in/nicochiari/" target="_blank">Nico Chiari</a>
+        </p>
+      </section>
       <!-- Sub-footer end-->
     </footer>
     <!-- Footer end -->
