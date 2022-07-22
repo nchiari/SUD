@@ -144,6 +144,9 @@ form {
   font-size: 1rem;
   color: #2a3844;
 }
+img {
+  max-width: 100%;
+}
 
 /* Main containers styles */
 .container {
@@ -386,7 +389,7 @@ form {
 .about-me__col2 {
   gap: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about-me {
     flex-direction: row;
   }
