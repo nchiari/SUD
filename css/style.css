@@ -9,25 +9,15 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 3rem;
   height: 100%;
   color: #1c262d;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   body {
     grid-gap: 5rem;
     font-size: 1rem;
   }
-}
-#indexLayout {
-  grid-template-areas:
-    "header"
-    "main"
-    "form"
-    "footer";
-}
+}*/
 #pagesLayout {
   grid-template-areas:
     "header"
@@ -101,7 +91,7 @@ input[type="submit"] {
   font-weight: 700;
   font-size: 1rem;
   width: auto;
-  padding: 0.8em 2rem;
+  padding: 0.8rem 2rem;
   border: 0;
   border-radius: 5px;
   background-color: #eb6619;
@@ -162,7 +152,7 @@ form {
 }
 
 /* Main containers styles */
-.container {
+/*.container {
   width: 80%;
   margin: 0 auto;
   max-width: 1320px;
@@ -176,34 +166,24 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
+}*/
 
 /* Navbar styles */
-.navbar {
-  grid-area: navbar;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: auto;
-  grid-template-areas: "navbar-logo" "navbar-menu";
+/*.navbar {
   text-align: center;
   align-items: center;
   padding: 2rem 0;
-}
-.navbar__logo {
-  grid-area: navbar-logo;
-}
+}*/
 .navbar__logo img {
   width: 130px;
 }
-.navbar__menu {
-  grid-area: navbar-menu;
+/*.navbar__menu {
   display: flex;
   flex-direction: column;
 }
 .navbar__links li {
-  display: block;
   margin: 1rem 1.5rem;
-}
+}*/
 .navbar__links a {
   color: #2a3844;
   transition: 100ms;
@@ -212,15 +192,10 @@ form {
   border-bottom: 2px solid #2a3844;
   transition: 100ms;
 }
-.navbar__button {
-  grid-area: navbar-button;
+/*navbar__button {
   display: none;
-}
-@media (min-width: 768px) {
-  .navbar {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "navbar-logo navbar-menu navbar-button";
-  }
+}*/
+/*@media (min-width: 768px) {
   .navbar__menu {
     flex-direction: row;
     justify-content: end;
@@ -229,18 +204,13 @@ form {
     display: flex;
     justify-content: end;
   }
-  .navbar__links li {
-    display: inline-block;
-    width: max-content;
-  }
-}
-@media (min-width: 880px) {
+}*/
+/*@media (min-width: 880px) {
   .navbar__button {
-    grid-area: navbar-button;
     display: block;
     text-align: end;
   }
-}
+}*/
 
 /* Banner styles */
 .banner {
@@ -267,77 +237,36 @@ form {
 }
 
 /* Index styles */
-.header {
-  grid-area: header;
-}
 .header--index {
   background: center / cover no-repeat url(../images/home-banner-mobile.jpg);
   box-shadow: 0px 10px 14px -17px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 860px) {
+@media (max-width: 767px) {
   .header--index {
     box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.85);
+    position: relative;
   }
 }
 @media (min-width: 768px) {
   .header--index {
     background: center / cover no-repeat url(../images/home-banner.jpg);
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-areas: "navbar" "hero";
-    grid-template-rows: auto 1fr;
-  }
-}
-@media (min-width: 1200px) {
-  .header--index {
     height: 100vh;
   }
 }
+@media (max-width: 990px) {
+  .header--index button {
+    padding: 0.8rem 1rem;
+  }
+}
 /* Index hero message styles */
-.heroHeader {
-  grid-area: hero;
-  padding-bottom: 2rem;
-}
-.heroHeader__message {
-  height: 100%;
-}
-.heroHeader__message p {
+.heroHeader p {
   padding: 2rem 0;
 }
-.col--left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.col--right {
-  display: none;
-}
-@media (min-width: 860px) {
-  .col--left {
-    width: 43%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .col--left p {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-  }
-  .col--right {
-    width: 57%;
-    display: inline-block;
-  }
-  .col--left h1 {
-    animation-name: text;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 2s;
-  }
-  .col--left p {
-    animation-name: text;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-duration: 2s;
+@media (min-width: 768px) {
+  .heroHeader {
+    position: absolute;
+    top: 35%;
+    left: 11.8%;
   }
   @keyframes text {
     from {
