@@ -3,13 +3,6 @@ CSS SUD - Proyecto Coderhouse Desarrollo Web
 © Nicolás Chiari 2022
 */
 
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Main styles */
 body {
   background-color: #fefeff;
