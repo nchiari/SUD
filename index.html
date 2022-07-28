@@ -15,47 +15,55 @@
   </head>
   <body>
     <!-- Header start -->
-    <header class="header--index">
+    <header>
       <!-- Nav menu -->
-      <nav class="navbar ms-auto navbar-expand-lg">
-        <div class="container justify-content-sm-center justify-content-md-between">
+      <nav class="navbar ms-auto navbar-expand-lg menu">
+        <div class="container">
           <!-- Logo header -->
-          <a class="navbar-brand navbar__logo col-md-2 col-sm-12" href="./index.html"><img src="./images/SUD_logo.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" /></a>
+          <a class="navbar-brand" href="./index.html"><img src="./images/SUD_logo.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" /></a>
+          <!-- Nav bar toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <!-- Nav bar menu and buttons -->
-          <ul class="nav navbar__links d-flex justify-content-end gap-3 col-md-8 col-sm-12">
-            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pages/cursos.html">Cursos</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-          </ul>
-          <!-- Call to action button -->
-          <a href="./pages/contacto.html" class="d-none justify-content-end col-lg-2 d-lg-block">
-            <button>Reserva una cita</button>
-          </a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav me-3 navbar__links">
+              <li class="nav-item px-"><a class="nav-link" href="./index.html">Inicio</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./pages/cursos.html">Cursos</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+            <a href="./pages/contacto.html">
+              <button>Reserva una cita</button>
+            </a>
+          </div>
         </div>
       </nav>
       <!-- Hero area -->
-      <section class="container heroHeader">
-        <div class="row">
-          <!-- Left col -->
-          <div class="col-5">
-            <h1>Optimiza tu vida y gana tiempo para tí</h1>
-            <p>Te doy las herramientas digitales necesarias para optimizar tus actividades diarias, que te ayudarán a vivir con menos preocupaciones y disfrutar más de tu tiempo.</p>
-            <!-- Hero button -->
-            <a href="./pages/servicios.html"><button>¿Cómo te ayudaré?</button></a>
+      <section class="heroHeader d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <!-- Left col -->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+              <h1>Optimiza tu vida y gana tiempo para tí</h1>
+              <p>Te doy las herramientas digitales necesarias para optimizar tus actividades diarias, que te ayudarán a vivir con menos preocupaciones y disfrutar más de tu tiempo.</p>
+              <!-- Hero button -->
+              <a href="./pages/servicios.html"><button>¿Cómo te ayudaré?</button></a>
+            </div>
+            <!-- Right col -->
+            <div class="col-7 d-lg-inline d-md-inline d-sm-none"></div>
+            <!-- <div class="col-7 d-none d-lg-block"></div> -->
           </div>
-          <!-- Right col -->
-          <!-- <div class="col-7 d-none d-lg-block"></div> -->
         </div>
       </section>
     </header>
     <!-- Header end -->
 
     <!-- Main content start -->
-    <main>
+    <main class="container">
       <!-- Benefits section -->
-      <section class="container benefits">
+      <section class="benefits">
         <h2>¿Cómo te ayudaré?</h2>
         <div class="benefits-grid">
           <div class="benefit__img" data-aos="fade-up">
@@ -83,7 +91,7 @@
       </section>
 
       <!-- Method section -->
-      <section class="container method">
+      <section class="method">
         <h2>Un plan hecho a medida</h2>
         <div class="method-grid">
           <!-- Step 1 -->
@@ -120,76 +128,80 @@
           </div>
         </div>
       </section>
-    </main>
-    <!-- Main content end -->
-
-    <!-- Contact form section start -->
-    <article class="container form">
-      <div class="row formSection">
-        <div class="col formSection__col1">
+      <!-- Contact form section start -->
+      <article class="row form formSection">
+        <div class="col-lg-4">
           <h2>¡Empieza ahora!</h2>
           <p>Ponte en contacto conmigo y reserva tu primer cita gratis.</p>
         </div>
-        <div class="col formSection__col2">
-          <form action="#">
-            <div class="formSection__labels">
-              <input type="text" name="name" id="name" placeholder="Tu nombre" />
+        <div class="container d-sm-blockb">
+          <div class="col-lg-8 formSection__col2">
+            <div>
+              <form action="#">
+                <div class="formSection__labels">
+                  <input type="text" name="name" id="name" placeholder="Tu nombre" />
+                </div>
+                <div class="formSection__labels">
+                  <input type="email" name="email" id="email" placeholder="Tu email" />
+                </div>
+                <div class="formSection__labels">
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="¿Cómo te gustaría que te ayude?"></textarea>
+                </div>
+                <div><input type="submit" value="Enviar" /></div>
+              </form>
             </div>
-            <div class="formSection__labels">
-              <input type="email" name="email" id="email" placeholder="Tu email" />
-            </div>
-            <div class="formSection__labels">
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="¿Cómo te gustaría que te ayude?"></textarea>
-            </div>
-            <div><input type="submit" value="Enviar" /></div>
-          </form>
+          </div>
         </div>
-      </div>
-    </article>
-    <!-- Contact form section end -->
+      </article>
+    </main>
+    <!-- Main content end -->
 
     <!-- Footer start -->
     <footer class="footer">
       <!-- Main footer start -->
-      <section class="container row footer__main">
-        <!-- Logo column -->
-        <div class="col footer__col1">
-          <a href="./index.html"
-            ><img src="./images/SUD_logo_footer.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" />
-            <p>Digitaliza tu vida</p></a
-          >
-        </div>
-        <!-- Menu column -->
-        <div class="col footer__col2">
-          <h3>Más información</h3>
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/cursos.html">Cursos</a></li>
-            <li><a href="./pages/sobre-mi.html">Sobre mi</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-        <!-- Social links column -->
-        <div class="col footer__col3">
-          <h3>Mis canales</h3>
-          <ul class="footer__socials">
-            <a href="#" target="_blank" title="Instagram">
-              <li>
-                <i class="fa-brands fa-instagram"></i>
-              </li>
-            </a>
-            <a href="#" target="_blank" title="TikTok">
-              <li>
-                <i class="fa-brands fa-tiktok"></i>
-              </li>
-            </a>
-            <a href="#" target="_blank" title="YouTube">
-              <li>
-                <i class="fa-brands fa-youtube"></i>
-              </li>
-            </a>
-          </ul>
+      <section class="container footer__main">
+        <div class="row mx-auto">
+          <!-- Logo column -->
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+            <a href="./index.html"
+              ><img src="./images/SUD_logo_footer.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" />
+              <p>Digitaliza tu vida</p></a
+            >
+          </div>
+          <!-- Menu column -->
+          <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+            <div class="footerNav">
+              <h3>Más información</h3>
+              <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/cursos.html">Cursos</a></li>
+                <li><a href="./pages/sobre-mi.html">Sobre mi</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Social links column -->
+          <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+            <h3>Mis canales</h3>
+            <ul class="footer__socials">
+              <a href="#" target="_blank" title="Instagram">
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+              </a>
+              <a href="#" target="_blank" title="TikTok">
+                <li>
+                  <i class="fa-brands fa-tiktok"></i>
+                </li>
+              </a>
+              <a href="#" target="_blank" title="YouTube">
+                <li>
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- Main footer end -->
