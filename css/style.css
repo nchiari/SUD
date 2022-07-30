@@ -231,7 +231,7 @@ form {
   display: none;
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navbar .container {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "navbar-logo navbar-menu navbar-button";
   }
