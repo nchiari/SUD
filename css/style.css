@@ -733,3 +733,45 @@ form {
   border-bottom: 1px solid #fff;
   transition: 100ms;
 }
+ver {
+  border-bottom: 1px solid #fff;
+  transition: 100ms;
+}
+@media (min-width: 786px) {
+  .footer__main {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+@media (min-width: 980px) {
+  .footer__socials li {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__socials li {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Sub Footer styles */
+.footer__sub {
+  padding: 0.7rem 0;
+  background-color: #1c262d;
+  text-align: center;
+}
+.footer__sub p {
+  color: #b9bec1;
+  font-size: 0.8rem;
+}
+.footer__sub a {
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 100ms;
+}
+.footer__sub a:hover {
+  border-bottom: 1px solid #fff;
+  transition: 100ms;
+}
