@@ -31,6 +31,7 @@ body {
 #indexLayout {
   grid-template-areas:
     "header"
+    "navbar"
     "main"
     "form"
     "footer";
@@ -186,63 +187,60 @@ form {
 }
 
 /* Navbar styles */
-.navbar {
+.navmenu {
   grid-area: navbar;
-  display: grid;
+  /*   display: grid;
   grid-gap: 1rem;
   grid-template-columns: auto;
   grid-template-areas: "navbar-logo" "navbar-menu";
   text-align: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 0; */
 }
 .navbar__logo {
   grid-area: navbar-logo;
 }
-.navbar__logo img {
-  width: 130px;
-}
-.navbar__menu {
+.navmenu__menu {
   grid-area: navbar-menu;
   display: flex;
   flex-direction: column;
 }
-.navbar__links li {
+.navmenu__links li {
   display: block;
   margin: 1rem 1.5rem;
 }
-.navbar__links a {
+.navmenu__links a {
   color: #2a3844;
   transition: 100ms;
 }
-.navbar__links a:hover {
+.navmenu__links a:hover {
   border-bottom: 2px solid #2a3844;
   transition: 100ms;
 }
-.navbar__button {
+.navmenu__button {
   grid-area: navbar-button;
   display: none;
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navmenu {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "navbar-logo navbar-menu navbar-button";
   }
-  .navbar__menu {
+  .navmenu__menu {
     flex-direction: row;
     justify-content: end;
   }
-  .navbar__links {
+  .navmenu__links {
     display: flex;
     justify-content: end;
   }
-  .navbar__links li {
+  .navmenu__links li {
     display: inline-block;
     width: max-content;
   }
 }
 @media (min-width: 880px) {
-  .navbar__button {
+  .navmenu__button {
     grid-area: navbar-button;
     display: block;
     text-align: end;
@@ -606,9 +604,6 @@ form {
 .footer__col1 p {
   color: #fff;
   font-family: "Nunito", sans-serif;
-}
-.footer__col1 img {
-  width: 130px;
 }
 .footer__col2 a {
   color: #fff;
