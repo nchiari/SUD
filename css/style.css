@@ -31,13 +31,13 @@ body {
 #indexLayout {
   grid-template-areas:
     "header"
-    "navbar"
     "main"
     "form"
     "footer";
 }
 #pagesLayout {
   grid-template-areas:
+    "navbar"
     "header"
     "main"
     "form"
@@ -45,6 +45,7 @@ body {
 }
 #contactLayout {
   grid-template-areas:
+    "navbar"
     "header"
     "main"
     "footer";
