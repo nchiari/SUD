@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- BOOTSTRAP
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,27 +19,26 @@
     <!-- Header start -->
     <header class="header header--index">
       <!-- Nav menu -->
-      <nav class="navmenu navbar ms-auto navbar-expand-lg menuIndex">
-        <div class="container">
-          <!-- Logo header -->
-          <a class="navbar-brand" href="./index.html"><img src="./images/SUD_logo.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" /></a>
-          <!-- Nav bar toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Nav bar menu and buttons -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav me-3 navbar__links">
-              <li class="nav-item px-"><a class="nav-link" href="./index.html">Inicio</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="./pages/cursos.html">Cursos</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-            <a href="./pages/contacto.html">
-              <button>Reserva una cita</button>
-            </a>
-          </div>
+      <nav class="container navbar">
+        <!-- Logo header -->
+        <div class="navbar__logo">
+          <a href="./index.html"><img src="./images/SUD_logo.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" /></a>
+        </div>
+        <!-- Nav bar menu and buttons -->
+        <div class="navbar__menu">
+          <ul class="navbar__links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/servicios.html">Servicios</a></li>
+            <li><a href="./pages/cursos.html">Cursos</a></li>
+            <li><a href="./pages/sobre-mi.html">Sobre mi</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Call to action button -->
+        <div class="navbar__button">
+          <a href="./pages/contacto.html">
+            <button>Reserva una cita</button>
+          </a>
         </div>
       </nav>
       <!-- Hero area -->
