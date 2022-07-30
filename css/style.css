@@ -188,50 +188,50 @@ form {
 }
 
 /* Navbar styles */
-.navmenu {
+.navbar {
   grid-area: navbar;
-  /*   display: grid;
+  display: grid;
   grid-gap: 1rem;
   grid-template-columns: auto;
   grid-template-areas: "navbar-logo" "navbar-menu";
   text-align: center;
   align-items: center;
-  padding: 2rem 0; */
+  padding: 2rem 0;
 }
 .navbar__logo {
   grid-area: navbar-logo;
 }
-.navmenu__menu {
+.navbar__menu {
   grid-area: navbar-menu;
   display: flex;
   flex-direction: column;
 }
-.navmenu__links li {
+.navbar__links li {
   display: block;
   margin: 1rem 1.5rem;
 }
-.navmenu__links a {
+.navbar__links a {
   color: #2a3844;
   transition: 100ms;
 }
-.navmenu__links a:hover {
+.navbar__links a:hover {
   border-bottom: 2px solid #2a3844;
   transition: 100ms;
 }
-.navmenu__button {
+.navbar__button {
   grid-area: navbar-button;
   display: none;
 }
 @media (min-width: 768px) {
-  .navmenu {
+  .navbar {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "navbar-logo navbar-menu navbar-button";
   }
-  .navmenu__menu {
+  .navbar__menu {
     flex-direction: row;
     justify-content: end;
   }
-  .navmenu__links {
+  .navbar__links {
     display: flex;
     justify-content: end;
   }
@@ -241,7 +241,7 @@ form {
   }
 }
 @media (min-width: 880px) {
-  .navmenu__button {
+  .navbar__button {
     grid-area: navbar-button;
     display: block;
     text-align: end;
@@ -319,6 +319,10 @@ form {
   display: none;
 }
 @media (min-width: 860px) {
+  .heroHeader {
+    background: center / cover no-repeat url(../images/home-banner.jpg);
+    height: 90vh;
+  }
   .col--left {
     width: 43%;
     display: flex;
