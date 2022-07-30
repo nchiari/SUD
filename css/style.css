@@ -201,7 +201,7 @@ form {
   padding: 2rem 0;
 }
 .navbar--index {
-  background-color: #fdf6e5;
+  background-color: rgb(253, 246, 229);
 }
 .navbar--pages {
   background-color: #fff;
@@ -309,6 +309,8 @@ form {
   background: center / cover no-repeat url(../images/home-banner-mobile.jpg);
   box-shadow: 0px 10px 14px -17px rgba(0, 0, 0, 0.3);
   padding: 4rem 0;
+  display: flex;
+  align-items: center;
 }
 .heroHeader__message {
   height: 100%;
@@ -326,13 +328,15 @@ form {
 }
 @media (max-width: 767px) {
   .heroHeader {
-    box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.85);
+    box-shadow: inset 0 0 0 1920px rgba(253, 246, 229, 0.85);
   }
 }
 @media (min-width: 860px) {
   .heroHeader {
-    background: center / cover no-repeat url(../images/home-banner.jpg);
+    background: center / cover no-repeat url(../images/home-banner-header.jpg);
     height: 90vh;
+    display: flex;
+    align-items: center;
   }
   @keyframes text {
     from {
