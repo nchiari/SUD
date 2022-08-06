@@ -1,29 +1,24 @@
-@media (max-width: calc($bp-mobile + 92px)) {
-  .header--index {
-    box-shadow: $banner-shadow;
+.heroHeader {
+  grid-area: hero;
+  background: center / cover no-repeat url(../images/home-banner-mobile.jpg);
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+  box-shadow: $banner-shadow;
+  p {
+    padding: 2rem 0;
   }
 }
-@media (max-width: calc($bp-mobile - 1px)) {
-  .heroHeader {
-    grid-area: hero;
-    background: center / cover no-repeat url(../images/home-banner-mobile.jpg);
-    padding: 2rem 0 4rem 0;
-    display: flex;
-    align-items: center;
-    box-shadow: $banner-shadow;
-    p {
-      padding: 2rem 0;
-    }
-  }
+.heroHeader__message {
+  height: 100%;
 }
-@media (min-width: $bp-mobile) {
-  .header--index {
-    background: center / cover no-repeat url(../images/home-banner.jpg);
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-areas: "navbar" "hero";
-    grid-template-rows: auto 1fr;
-  }
+.col--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col--right {
+  display: none;
 }
 @media (min-width: $bp-bigscreen) {
   .header--index {
@@ -48,6 +43,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+    box-shadow: none;
   }
   @keyframes text {
     from {

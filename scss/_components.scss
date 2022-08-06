@@ -1,11 +1,6 @@
 /* Benefits styles */
 .benefits {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  img {
-    width: 50%;
-  }
+  @include component;
 }
 .benefits-grid {
   display: grid;
@@ -60,12 +55,7 @@
 
 /* Method styles */
 .method {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  img {
-    width: 50%;
-  }
+  @include component;
 }
 .method-grid {
   display: grid;
@@ -81,7 +71,7 @@
     font-size: 1.8rem;
     font-weight: 900;
     font-family: $font-headings;
-    background-color: #e95600;
+    background-color: $color-h;
     color: #fff;
     padding: 0.8rem;
     border-radius: 5px;

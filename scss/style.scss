@@ -32,10 +32,8 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 
 /* Sobre mi page styles */
 .about-me {
-  display: flex;
-  flex-direction: column;
+  @include component;
   align-items: flex-start;
-  gap: 2rem;
 }
 .about-me__col1 {
   img {
@@ -76,12 +74,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 
 /* Servicios page styles */
 .services {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  img {
-    width: 50%;
-  }
+  @include component;
 }
 .services-grid {
   display: grid;
@@ -121,9 +114,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 
 /* Cursos page styles */
 .courses {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include component;
 }
 .courses-grid {
   display: grid;

@@ -14,25 +14,35 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 body {
   background-color: #fefeff;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
+  color: #1c262d;
+  font-size: 1rem;
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 3rem;
   height: 100%;
-  color: #1c262d;
+  grid-template-areas: "header" "main" "footer";
 }
 
 @media (min-width: 786px) {
   body {
-    grid-gap: 5rem;
-    font-size: 1rem;
+    grid-gap: 10rem;
+    font-size: 1.1rem;
   }
 }
-#layout {
-  grid-template-areas: "header" "main" "footer";
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #1c262d;
 }
 
+@media (min-width: 786px) {
+  p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
 main {
   grid-area: main;
   display: flex;
@@ -42,7 +52,7 @@ main {
 
 @media (min-width: 786px) {
   main {
-    grid-gap: 9rem;
+    grid-gap: 12rem;
   }
 }
 h1 {
@@ -55,8 +65,8 @@ h1 {
 
 @media (min-width: 786px) {
   h1 {
-    font-size: 2.6rem;
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 3.3rem;
   }
 }
 h2 {
@@ -68,19 +78,19 @@ h2 {
 
 @media (min-width: 786px) {
   h2 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 }
 h3 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  font-size: 1.2rem;
-  color: #eb6619;
+  font-size: 1.4rem;
+  color: #e95600;
 }
 
 @media (min-width: 786px) {
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 ul,
@@ -280,7 +290,7 @@ form {
 /* Banner styles */
 .banner {
   padding: 6rem 0;
-  box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.8);
+  box-shadow: inset 0 0 0 1920px rgba(253, 246, 229, 0.8);
   text-align: center;
 }
 
@@ -300,10 +310,15 @@ form {
 .benefits {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 .benefits img {
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .benefits {
+    gap: 5rem;
+  }
 }
 
 .benefits-grid {
@@ -361,10 +376,15 @@ form {
 .method {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 .method img {
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .method {
+    gap: 5rem;
+  }
 }
 
 .method-grid {
@@ -451,33 +471,32 @@ form {
   }
 }
 /* Index page styles */
-@media (max-width: 878px) {
-  .header--index {
-    box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.8);
-  }
+.heroHeader {
+  grid-area: hero;
+  background: center/cover no-repeat url(../images/home-banner-mobile.jpg);
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 0 1920px rgba(253, 246, 229, 0.8);
 }
-@media (max-width: 785px) {
-  .heroHeader {
-    grid-area: hero;
-    background: center/cover no-repeat url(../images/home-banner-mobile.jpg);
-    padding: 2rem 0 4rem 0;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.8);
-  }
-  .heroHeader p {
-    padding: 2rem 0;
-  }
+.heroHeader p {
+  padding: 2rem 0;
 }
-@media (min-width: 786px) {
-  .header--index {
-    background: center/cover no-repeat url(../images/home-banner.jpg);
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-areas: "navbar" "hero";
-    grid-template-rows: auto 1fr;
-  }
+
+.heroHeader__message {
+  height: 100%;
 }
+
+.col--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col--right {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .header--index {
     height: 100vh;
@@ -501,6 +520,7 @@ form {
     padding: 0;
     display: flex;
     align-items: center;
+    box-shadow: none;
   }
   @keyframes text {
     from {
@@ -551,8 +571,16 @@ form {
 .about-me {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   align-items: flex-start;
-  gap: 2rem;
+}
+.about-me img {
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .about-me {
+    gap: 5rem;
+  }
 }
 
 .about-me__col1 img {
@@ -596,10 +624,15 @@ form {
 .services {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 .services img {
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .services {
+    gap: 5rem;
+  }
 }
 
 .services-grid {
@@ -644,7 +677,15 @@ form {
 .courses {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+}
+.courses img {
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .courses {
+    gap: 5rem;
+  }
 }
 
 .courses-grid {
@@ -737,7 +778,7 @@ form {
 }
 
 .footer__main {
-  padding: 2.5rem 0;
+  padding: 4rem 0;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -751,8 +792,7 @@ form {
 
 .footer__col2 a {
   color: #fff;
-  font-size: 0.9rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   transition: 100ms;
 }
 .footer__col2 a:hover {
