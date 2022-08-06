@@ -456,6 +456,19 @@ form {
     box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.8);
   }
 }
+@media (max-width: 785px) {
+  .heroHeader {
+    grid-area: hero;
+    background: center/cover no-repeat url(../images/home-banner-mobile.jpg);
+    padding: 2rem 0 4rem 0;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.8);
+  }
+  .heroHeader p {
+    padding: 2rem 0;
+  }
+}
 @media (min-width: 786px) {
   .header--index {
     background: center/cover no-repeat url(../images/home-banner.jpg);
@@ -481,20 +494,7 @@ form {
     display: none;
   }
 }
-@media (min-width: 1200px) and (max-width: 767px) {
-  .heroHeader {
-    grid-area: hero;
-    background: center/cover no-repeat url(../images/home-banner-mobile.jpg);
-    padding: 2rem 0 4rem 0;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 0 1920px rgba(253, 249, 238, 0.8);
-  }
-  .heroHeader p {
-    padding: 2rem 0;
-  }
-}
-@media (min-width: 1200px) and (min-width: 878px) {
+@media (min-width: 878px) {
   .heroHeader {
     background: center/cover no-repeat url(../images/home-banner-header.jpg);
     height: 90vh;
