@@ -1,6 +1,6 @@
 .footer {
   grid-area: footer;
-  background-image: linear-gradient(20deg, #253748, #364755, #3b5e7a);
+  @include footer-shadow(45deg);
   color: #fff;
   text-align: center;
   display: flex;

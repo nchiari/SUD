@@ -15,7 +15,7 @@
 .benefit__img {
   text-align: center;
   width: 100%;
-  border-radius: 5px;
+  border-radius: $radius;
   padding: 1rem;
   box-shadow: #ccc 0 5px 16px;
   -webkit-box-shadow: #ccc 0 5px 16px;
@@ -105,15 +105,25 @@
     padding: 2rem 0;
     text-align: left;
   }
+  label {
+    color: #fff;
+  }
+  input[type="submit"] {
+    padding: 0.8em 4rem;
+  }
 }
 .formSection__col2 {
   padding: 1em 1rem;
-  background-color: #364755;
-  border-radius: 8px;
-  box-shadow: 7px 5px 30px 0 rgb(159 159 159 / 15%);
+  @include footer-shadow(-45deg);
+  border-radius: $radius;
+  @include container-shadow();
   div {
     padding: 0.2rem 0;
   }
+}
+.formSection__labels {
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: $bp-mobile) {
   .formSection {
@@ -127,23 +137,9 @@
   .formSection__col2 {
     width: 60%;
     padding: 2em 3rem;
-    background-color: #364755;
     border-radius: 8px;
-    box-shadow: 7px 5px 30px 0 rgb(159 159 159 / 15%);
     div {
       padding: 0.5rem 0;
     }
-  }
-}
-.formSection__labels {
-  display: flex;
-  flex-direction: column;
-}
-.formSection {
-  label {
-    color: #fff;
-  }
-  input[type="submit"] {
-    padding: 0.8em 4rem;
   }
 }

@@ -23,13 +23,6 @@ body {
     font-size: 1rem;
   }
 }
-#indexLayout {
-  grid-template-areas:
-    "header"
-    "main"
-    "form"
-    "footer";
-}
 #pagesLayout {
   grid-template-areas:
     "header"
@@ -51,7 +44,7 @@ main {
 }
 @media (min-width: $bp-mobile) {
   main {
-    grid-gap: 5rem;
+    grid-gap: 9rem;
   }
 }
 h1 {
@@ -97,43 +90,11 @@ ol {
   list-style: none;
   color: #2a3844;
 }
-button,
+button {
+  @include buttons(true);
+}
 input[type="submit"] {
-  font-family: $font-headings;
-  font-weight: 700;
-  font-size: 1rem;
-  width: auto;
-  padding: 0.8em 2rem;
-  border: 0;
-  border-radius: 5px;
-  background-color: #eb6619;
-  color: #fff;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0px 12px 24px -17px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 12px 24px -17px rgba(0, 0, 0, 0.5);
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -20px;
-    height: 100%;
-    width: 0%;
-    background-color: #f8ad2d;
-    z-index: -1;
-    transform: skew(-30deg);
-    transition: all 0.5s ease-in-out;
-  }
-  &:hover:before {
-    width: 200%;
-  }
-  &:hover {
-    color: #2a3844;
-    transition: all 0.5s ease-in-out;
-  }
+  @include buttons(false);
 }
 input,
 textarea {
@@ -151,6 +112,9 @@ textarea {
 }
 a {
   text-decoration: none;
+}
+article {
+  grid-area: form;
 }
 form {
   font-family: $font-body;
