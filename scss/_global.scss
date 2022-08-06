@@ -23,14 +23,7 @@ body {
     font-size: 1rem;
   }
 }
-#pagesLayout {
-  grid-template-areas:
-    "header"
-    "main"
-    "form"
-    "footer";
-}
-#contactLayout {
+#layout {
   grid-template-areas:
     "header"
     "main"
