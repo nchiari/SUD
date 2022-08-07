@@ -33,9 +33,11 @@
   a {
     color: #2a3844;
     transition: 100ms;
-    &:hover {
-      border-bottom: 2px solid #2a3844;
-      transition: 100ms;
+    @media (hover) {
+      &:hover {
+        border-bottom: 2px solid #2a3844;
+        transition: 100ms;
+      }
     }
   }
 }

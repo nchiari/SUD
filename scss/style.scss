@@ -7,18 +7,8 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 @import "variables";
 @import "global";
 @import "navbar";
+@import "banners";
 
-/* Banner styles */
-.banner {
-  padding: 6rem 0;
-  box-shadow: $banner-shadow;
-  text-align: center;
-}
-.bannerText {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 /* Header styles */
 .header {
   grid-area: header;
@@ -55,22 +45,6 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
     width: 50%;
   }
 }
-.banner--about {
-  background: url(../images/about-banner-mobile.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: $bp-mobile) {
-  .banner--about {
-    background: url(../images/about-banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
 
 /* Servicios page styles */
 .services {
@@ -87,7 +61,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 .service-box {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 .service-box__info {
   display: flex;
@@ -99,22 +73,6 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto;
     grid-gap: 3rem;
-  }
-}
-.banner--services {
-  background: url(../images/services-banner-mobile.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: $bp-mobile) {
-  .banner--services {
-    background: url(../images/services-banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
@@ -157,40 +115,6 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
     grid-gap: 5rem;
-  }
-}
-.banner--courses {
-  background: url(../images/courses-banner-mobile.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: $bp-mobile) {
-  .banner--courses {
-    background: url(../images/courses-banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-/* Contacto page styles */
-.banner--contact {
-  background: url(../images/contact-banner-mobile.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-width: $bp-mobile) {
-  .banner--contact {
-    background: url(../images/contact-banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 

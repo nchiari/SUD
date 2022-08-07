@@ -57,6 +57,13 @@
   .method-grid {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
+    @for $i from 2 through 4 {
+      div {
+        &:nth-child(#{$i}) {
+          transition-delay: 100ms * $i;
+        }
+      }
+    }
   }
 }
 /* Default form section */
@@ -64,9 +71,7 @@
   grid-area: form;
 }
 .formSection {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   p {
     padding: 2rem 0;
     text-align: left;
@@ -76,6 +81,11 @@
   }
   input[type="submit"] {
     padding: 0.8em 4rem;
+  }
+}
+.formSection__col1 {
+  img {
+    width: 100%;
   }
 }
 .formSection__col2 {
@@ -93,12 +103,15 @@
 }
 @media (min-width: $bp-mobile) {
   .formSection {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
   }
   .formSection__col1 {
     width: 40%;
+    img {
+      width: auto;
+    }
   }
   .formSection__col2 {
     width: 60%;
