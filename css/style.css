@@ -303,6 +303,20 @@ form {
   background-image: url(../images/contact-banner.jpg);
 }
 
+@media (max-width: 786px) {
+  .banner--services {
+    background-image: url(../images/services-banner-mobile.jpg);
+  }
+  .banner--courses {
+    background-image: url(../images/courses-banner-mobile.jpg);
+  }
+  .banner--about {
+    background-image: url(../images/about-banner-mobile.jpg);
+  }
+  .banner--contact {
+    background-image: url(../images/contact-banner-mobile.jpg);
+  }
+}
 /* Banner styles*/
 .banner {
   padding: 6rem 0;

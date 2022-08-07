@@ -1,14 +1,27 @@
 //Banner map
-$banner: (
+$bannerDesktop: (
   services: url(../images/services-banner.jpg),
   courses: url(../images/courses-banner.jpg),
   about: url(../images/about-banner.jpg),
   contact: url(../images/contact-banner.jpg),
 );
-@each $page, $url in $banner {
+$bannerMobile: (
+  services: url(../images/services-banner-mobile.jpg),
+  courses: url(../images/courses-banner-mobile.jpg),
+  about: url(../images/about-banner-mobile.jpg),
+  contact: url(../images/contact-banner-mobile.jpg),
+);
+@each $page, $url in $bannerDesktop {
   .banner--#{$page} {
     background-image: $url;
     @extend .bgPos;
+  }
+}
+@media (max-width: $bp-mobile) {
+  @each $page, $url in $bannerMobile {
+    .banner--#{$page} {
+      background-image: $url;
+    }
   }
 }
 
