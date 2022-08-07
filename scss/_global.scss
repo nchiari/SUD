@@ -10,7 +10,7 @@ body {
   background-color: $color-bg;
   font-family: $font-body;
   color: $color-text;
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 3rem;
@@ -22,32 +22,25 @@ body {
 }
 @media (min-width: $bp-mobile) {
   body {
-    grid-gap: 10rem;
-    font-size: 1.1rem;
+    grid-gap: 7rem;
+    font-size: 1rem;
   }
 }
 p {
   font-size: 1rem;
-  line-height: 1.5rem;
   font-family: $font-body;
   font-weight: 400;
   color: $color-text;
-}
-@media (min-width: $bp-mobile) {
-  p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-  }
 }
 main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  grid-gap: 3rem;
+  grid-gap: 6rem;
 }
 @media (min-width: $bp-mobile) {
   main {
-    grid-gap: 12rem;
+    grid-gap: 8rem;
   }
 }
 h1 {
@@ -59,8 +52,8 @@ h1 {
 }
 @media (min-width: $bp-mobile) {
   h1 {
-    font-size: 3rem;
-    line-height: 3.3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 h2 {
@@ -71,18 +64,18 @@ h2 {
 }
 @media (min-width: $bp-mobile) {
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 h3 {
   font-family: $font-headings;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: $color-h;
 }
 @media (min-width: $bp-mobile) {
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 ul,

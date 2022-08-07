@@ -58,16 +58,13 @@ $font-headings: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  img {
-    width: 100%;
-  }
   @media (min-width: $bp-mobile) {
-    gap: 5rem;
+    gap: 4rem;
   }
 }
 
 // Shadows and gradients
-$banner-shadow: inset 0 0 0 1920px rgba(253, 246, 229, 0.8);
+$banner-shadow: inset 0 0 0 1920px rgba(253, 246, 229, 0.9);
 @mixin footer-shadow($deg) {
   background-image: linear-gradient($deg, #253748, #364755, #3b5e7a);
 }

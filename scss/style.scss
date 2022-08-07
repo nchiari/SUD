@@ -56,7 +56,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
   }
 }
 .banner--about {
-  background: url(../images/contact-banner-mobile.jpg);
+  background: url(../images/about-banner-mobile.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 }
 @media (min-width: $bp-mobile) {
   .banner--about {
-    background: url(../images/contact-banner.jpg);
+    background: url(../images/about-banner.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,25 +78,31 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 }
 .services-grid {
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 4rem;
   grid-template-rows: repeat(3, auto);
+  img {
+    max-width: 100%;
+  }
 }
 .service-box {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-@media (min-width: $bp-mobile) {
+.service-box__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: $bp-tablet) {
   .services-grid {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto;
+    grid-gap: 3rem;
   }
 }
 .banner--services {
-  background: url(../images/contact-banner-mobile.jpg);
+  background: url(../images/services-banner-mobile.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +110,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 }
 @media (min-width: $bp-mobile) {
   .banner--services {
-    background: url(../images/contact-banner.jpg);
+    background: url(../images/services-banner.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,6 +143,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
+  gap: 1rem;
   border-bottom: 1px solid #ededed;
 }
 .courses-box__price {
@@ -145,14 +152,15 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: $bp-tablet) {
+@media (min-width: $bp-mobile) {
   .courses-grid {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
+    grid-gap: 5rem;
   }
 }
 .banner--courses {
-  background: url(../images/contact-banner-mobile.jpg);
+  background: url(../images/courses-banner-mobile.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +168,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 }
 @media (min-width: $bp-mobile) {
   .banner--courses {
-    background: url(../images/contact-banner.jpg);
+    background: url(../images/courses-banner.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
