@@ -24,55 +24,24 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 .about-me {
   @include component;
   align-items: flex-start;
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+  }
 }
 .about-me__col1 {
+  text-align: center;
   img {
     border-radius: $radius;
+  }
+  @media (min-width: $bp-tablet) {
+    width: 50%;
   }
 }
 .about-me__col2 {
   gap: 2rem;
-}
-@media (min-width: $bp-mobile) {
-  .about-me {
-    flex-direction: row;
-  }
-  .about-me__col2 {
+  @media (min-width: $bp-tablet) {
     gap: 2rem;
     width: 50%;
-  }
-  .about-me__col1 {
-    width: 50%;
-  }
-}
-
-/* Servicios page styles */
-.services {
-  @include component;
-}
-.services-grid {
-  display: grid;
-  grid-gap: 4rem;
-  grid-template-rows: repeat(3, auto);
-  img {
-    max-width: 100%;
-  }
-}
-.service-box {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.service-box__info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media (min-width: $bp-tablet) {
-  .services-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 3rem;
   }
 }
 
