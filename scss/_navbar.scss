@@ -49,10 +49,10 @@
 @media (max-width: $bp-midscreen) {
   .nav-menu {
     position: absolute;
-    left: -100%;
+    right: -100%;
     top: 8rem;
     flex-direction: column;
-    background-color: $color-text;
+    background-color: #253748;
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -63,7 +63,7 @@
   }
 
   .nav-menu.active {
-    left: 0;
+    right: 0;
   }
 
   .nav-item {
