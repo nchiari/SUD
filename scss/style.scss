@@ -53,24 +53,31 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
   display: grid;
   grid-gap: 3rem;
   grid-template-rows: repeat(4, auto);
+  @media (min-width: $bp-mobile) {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    align-items: flex-start;
+  }
 }
 .courses-box {
   display: flex;
   flex-direction: column;
-  border-radius: $radius;
 }
 .courses-box__thumb {
-  display: flex;
   img {
     width: 100%;
     border-radius: $radius;
   }
+  @media (min-width: $bp-mobile) {
+    height: 100%;
+  }
+}
+.courses-box__title {
+  padding: 1rem 0;
 }
 .courses-box__info {
-  display: flex;
-  flex-direction: column;
   padding: 1rem 0;
-  gap: 1rem;
   border-bottom: 1px solid #ededed;
 }
 .courses-box__price {
@@ -78,13 +85,6 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
   padding: 1rem 0;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: $bp-mobile) {
-  .courses-grid {
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 5rem;
-  }
 }
 
 /* Footer styles */
