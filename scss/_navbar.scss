@@ -1,14 +1,14 @@
 /* Navbar by Gaurav https://github.com/dev-ggaurav */
 
-.navbarIndex {
+.nav--index {
   background-color: rgb(253, 246, 229);
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbarPages {
-  @extend .navbarIndex;
+.nav--pages {
+  @extend .nav--index;
   padding: 2rem 0;
   background-color: $color-bg;
 }
@@ -42,7 +42,7 @@
   flex-wrap: wrap;
   @media (max-width: $bp-midscreen) {
     position: absolute;
-    right: -100%;
+    left: -100%;
     top: 8rem;
     flex-direction: column;
     background-color: #253748;
@@ -78,7 +78,7 @@
 }
 @media (max-width: $bp-midscreen) {
   .nav-menu.active {
-    right: 0;
+    left: 0;
   }
   .nav-item {
     margin: 2.5rem 0;
@@ -91,10 +91,5 @@
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-}
-@media (max-width: $bp-tablet) {
-  .navbar-button {
-    display: none;
   }
 }

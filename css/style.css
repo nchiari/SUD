@@ -18,7 +18,7 @@ body {
   font-size: 0.9rem;
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 3rem;
+  grid-gap: 5rem;
   height: 100%;
   grid-template-areas: "header" "main" "footer";
 }
@@ -214,7 +214,7 @@ form {
 }
 
 /* Navbar by Gaurav https://github.com/dev-ggaurav */
-.navbarIndex, .navbarPages {
+.nav--index, .nav--pages {
   background-color: rgb(253, 246, 229);
   padding-top: 2rem;
   display: flex;
@@ -222,7 +222,7 @@ form {
   align-items: center;
 }
 
-.navbarPages {
+.nav--pages {
   padding: 2rem 0;
   background-color: #fefeff;
 }
@@ -264,7 +264,7 @@ form {
 @media (max-width: 870px) {
   .nav-menu {
     position: absolute;
-    right: -100%;
+    left: -100%;
     top: 8rem;
     flex-direction: column;
     background-color: #253748;
@@ -306,7 +306,7 @@ form {
 
 @media (max-width: 870px) {
   .nav-menu.active {
-    right: 0;
+    left: 0;
   }
   .nav-item {
     margin: 2.5rem 0;
@@ -319,11 +319,6 @@ form {
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-}
-@media (max-width: 1024px) {
-  .navbar-button {
-    display: none;
   }
 }
 .banner--services {
@@ -374,18 +369,18 @@ form {
   }
 }
 
-.bannerText {
+.banner__title {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 @media (min-width: 1024px) {
-  .bannerText {
+  .banner__title {
     width: 40%;
   }
 }
 @media (min-width: 786px) {
-  .bannerText {
+  .banner__title {
     width: 70%;
   }
 }
@@ -407,34 +402,34 @@ form {
   }
 }
 
-.benefits-grid {
+.benefits__grid {
   display: grid;
   grid-gap: 7rem;
   grid-template-rows: repeat(3, auto);
 }
-.benefits-grid img {
+.benefits__grid img {
   width: 100%;
   border-radius: 10px;
 }
 @media (min-width: 1024px) {
-  .benefits-grid {
+  .benefits__grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto;
     grid-gap: 3rem;
   }
 }
 
-.benefits-box {
+.benefits__box {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.benefits-img {
+.benefits__img {
   text-align: center;
 }
 
-.benefits-box__info {
+.benefits__info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -451,34 +446,34 @@ form {
   }
 }
 
-.services-grid {
+.services__grid {
   display: grid;
   grid-gap: 7rem;
   grid-template-rows: repeat(3, auto);
 }
-.services-grid img {
+.services__grid img {
   width: 100%;
   border-radius: 10px;
 }
 @media (min-width: 1024px) {
-  .services-grid {
+  .services__grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto;
     grid-gap: 3rem;
   }
 }
 
-.services-box {
+.services__box {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.services-img {
+.services__img {
   text-align: center;
 }
 
-.services-box__info {
+.services__info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -496,34 +491,34 @@ form {
   }
 }
 
-.method-grid {
+.method__grid {
   display: grid;
   grid-gap: 3rem;
   grid-template-rows: repeat(4, auto);
 }
 @media (min-width: 786px) {
-  .method-grid {
+  .method__grid {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
   }
-  .method-grid div:nth-child(2) {
+  .method__grid div:nth-child(2) {
     transition-delay: 200ms;
   }
-  .method-grid div:nth-child(3) {
+  .method__grid div:nth-child(3) {
     transition-delay: 300ms;
   }
-  .method-grid div:nth-child(4) {
+  .method__grid div:nth-child(4) {
     transition-delay: 400ms;
   }
 }
 
-.method-box {
+.method__box {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   text-align: left;
 }
-.method-box span {
+.method__box span {
   font-size: 1.8rem;
   font-weight: 900;
   font-family: "Nunito", sans-serif;
@@ -605,7 +600,7 @@ form {
   flex-direction: column;
 }
 
-.form__img {
+.formSection-img {
   text-align: center;
 }
 
@@ -709,40 +704,40 @@ form {
   }
 }
 /* Sobre mi page styles */
-.about-me {
+.aboutMe {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: flex-start;
 }
 @media (min-width: 786px) {
-  .about-me {
+  .aboutMe {
     gap: 4rem;
   }
 }
 @media (min-width: 1024px) {
-  .about-me {
+  .aboutMe {
     flex-direction: row;
   }
 }
 
-.about-me__col1 {
+.aboutMe__col1 {
   text-align: center;
 }
-.about-me__col1 img {
+.aboutMe__col1 img {
   border-radius: 10px;
 }
 @media (min-width: 1024px) {
-  .about-me__col1 {
+  .aboutMe__col1 {
     width: 50%;
   }
 }
 
-.about-me__col2 {
+.aboutMe__col2 {
   gap: 2rem;
 }
 @media (min-width: 1024px) {
-  .about-me__col2 {
+  .aboutMe__col2 {
     gap: 2rem;
     width: 50%;
   }
@@ -760,13 +755,13 @@ form {
   }
 }
 
-.courses-grid {
+.courses__grid {
   display: grid;
   grid-gap: 3rem;
   grid-template-rows: repeat(4, auto);
 }
 @media (min-width: 786px) {
-  .courses-grid {
+  .courses__grid {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
@@ -774,31 +769,31 @@ form {
   }
 }
 
-.courses-box {
+.courses__box {
   display: flex;
   flex-direction: column;
 }
 
-.courses-box__thumb img {
+.courses__box__img img {
   width: 100%;
   border-radius: 10px;
 }
 @media (min-width: 786px) {
-  .courses-box__thumb {
+  .courses__box__img {
     height: 100%;
   }
 }
 
-.courses-box__title {
+.courses__box__title {
   padding: 1rem 0;
 }
 
-.courses-box__info {
+.courses__box__info {
   padding: 1rem 0;
   border-bottom: 1px solid #ededed;
 }
 
-.courses-box__price {
+.courses__box__price {
   display: flex;
   padding: 1rem 0;
   justify-content: space-between;
@@ -819,7 +814,7 @@ form {
   margin-bottom: 1rem;
 }
 
-.footer__main {
+.footerSection {
   padding: 3rem 0;
   align-items: center;
   display: flex;
@@ -827,47 +822,47 @@ form {
   gap: 2rem;
 }
 @media (min-width: 786px) {
-  .footer__main {
+  .footerSection {
     align-items: flex-start;
     flex-direction: row;
   }
 }
 
-.footer__col1 p {
+.footerSection__col1 p {
   color: #fff;
   font-family: "Nunito", sans-serif;
 }
 
-.footer__col2 a {
+.footerSection__col2 a {
   color: #fff;
   line-height: 2.2rem;
   transition: 100ms;
   font-size: 1rem;
 }
 @media (hover) {
-  .footer__col2 a:hover {
+  .footerSection__col2 a:hover {
     border-bottom: 1px solid #fff;
     transition: 100ms;
   }
 }
 
-.footer__socials {
+.footerSection__socials {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.footer__socials a {
+.footerSection__socials a {
   color: #fff;
   font-size: 1.2rem;
   transition: 300ms;
 }
 @media (hover) {
-  .footer__socials a:hover i {
+  .footerSection__socials a:hover i {
     color: #2a3844;
     transition: 100ms;
   }
 }
-.footer__socials li {
+.footerSection__socials li {
   background-color: #eb6619;
   border: 1px solid #e95600;
   height: 50px;
@@ -881,68 +876,47 @@ form {
   -webkit-box-shadow: 0px 12px 24px -17px rgba(0, 0, 0, 0.3);
 }
 @media (hover) {
-  .footer__socials li:hover {
+  .footerSection__socials li:hover {
     border: 1px solid #ffa200;
     background-color: #f8ad2d;
     transition: 300ms;
   }
 }
 @media (min-width: 1024px) {
-  .footer__socials li {
+  .footerSection__socials li {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
-  .footer__socials li {
+  .footerSection__socials li {
     height: 60px;
     width: 60px;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 786px) {
-  .footer__socials li {
+  .footerSection__socials li {
     font-size: 1.3rem;
   }
 }
 
-.footer__sub {
-  padding: 1rem 0;
-  background-color: #1f2d36;
-  text-align: center;
-}
-.footer__sub p {
-  color: #b9bec1;
-  font-size: 0.8rem;
-}
-.footer__sub a {
-  color: #fff;
-  font-size: 0.8rem;
-  transition: 100ms;
-}
-@media (hover) {
-  .footer__sub a:hover {
-    border-bottom: 1px solid #fff;
-    transition: 100ms;
-  }
-}
-
 /* Sub Footer styles */
-.footer__sub {
+.footerSub {
   padding: 0.7rem 0;
   background-color: #1c262d;
   text-align: center;
 }
-.footer__sub p {
+.footerSub p {
   color: #b9bec1;
   font-size: 0.8rem;
 }
-.footer__sub a {
+.footerSub a {
   color: #fff;
   font-size: 0.8rem;
   transition: 100ms;
 }
 @media (hover) {
-  .footer__sub a:hover {
+  .footerSub a:hover {
     border-bottom: 1px solid #fff;
     transition: 100ms;
   }

@@ -22,14 +22,14 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 @import "index";
 
 /* Sobre mi page styles */
-.about-me {
+.aboutMe {
   @include component;
   align-items: flex-start;
   @media (min-width: $bp-tablet) {
     flex-direction: row;
   }
 }
-.about-me__col1 {
+.aboutMe__col1 {
   text-align: center;
   img {
     border-radius: $radius;
@@ -38,7 +38,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
     width: 50%;
   }
 }
-.about-me__col2 {
+.aboutMe__col2 {
   gap: 2rem;
   @media (min-width: $bp-tablet) {
     gap: 2rem;
@@ -50,7 +50,7 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 .courses {
   @include component;
 }
-.courses-grid {
+.courses__grid {
   display: grid;
   grid-gap: 3rem;
   grid-template-rows: repeat(4, auto);
@@ -61,11 +61,11 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
     align-items: flex-start;
   }
 }
-.courses-box {
+.courses__box {
   display: flex;
   flex-direction: column;
 }
-.courses-box__thumb {
+.courses__box__img {
   img {
     width: 100%;
     border-radius: $radius;
@@ -74,14 +74,14 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
     height: 100%;
   }
 }
-.courses-box__title {
+.courses__box__title {
   padding: 1rem 0;
 }
-.courses-box__info {
+.courses__box__info {
   padding: 1rem 0;
   border-bottom: 1px solid #ededed;
 }
-.courses-box__price {
+.courses__box__price {
   display: flex;
   padding: 1rem 0;
   justify-content: space-between;

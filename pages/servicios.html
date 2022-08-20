@@ -18,7 +18,7 @@
     <!-- Header start -->
     <header class="header">
       <!-- Nav menu -->
-      <nav class="navbarPages">
+      <nav class="nav--pages">
         <div class="container">
           <div class="nav-container">
             <!-- Logo header -->
@@ -30,24 +30,21 @@
               <li class="nav-item"><a href="./cursos.html" class="nav-link">Cursos</a></li>
               <li class="nav-item"><a href="./sobre-mi.html" class="nav-link">Sobre mi</a></li>
               <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+              <li class="nav-item">
+                <a href="./pages/contacto.html" class="nav-link"><button>Reserva una cita</button></a>
+              </li>
             </ul>
             <div class="hamburger">
               <div class="bar"></div>
               <div class="bar"></div>
               <div class="bar"></div>
             </div>
-            <!-- Call to action button -->
-            <div class="navbar-button">
-              <a href=".contacto.html">
-                <button>Reserva una cita</button>
-              </a>
-            </div>
           </div>
         </div>
       </nav>
       <!-- Hero banner -->
       <section class="banner banner--services">
-        <div class="container bannerText">
+        <div class="container banner__title">
           <h1>Mis servicios</h1>
           <p>Conseguir la organización, el orden y el tiempo libre que quieres para tu vida está al alcance de tu mano. Literalmente.</p>
         </div>
@@ -60,13 +57,13 @@
       <!-- Services section -->
       <section class="container services">
         <h2>Comencemos a trabajar juntos</h2>
-        <div class="row services-grid">
+        <div class="row services__grid">
           <!-- Service 1 -->
-          <div class="services-box">
-            <div class="services-img" data-aos="fade-up">
+          <div class="services__box">
+            <div class="services__img" data-aos="fade-up">
               <img src="../images/personalizacion.jpg" alt="Digitalización a tu medida" />
             </div>
-            <div class="services-box__info">
+            <div class="services__info">
               <h3>Digitalización a tu medida</h3>
               <p>Analizamos juntos tus necesidades y evaluamos qué tipo de <strong>herramientas digitales</strong> te ayudarán a <strong>conseguir tus objetivos</strong> en el menor tiempo posible.</p>
             </div>
@@ -75,11 +72,11 @@
             </div>
           </div>
           <!-- Service 2 -->
-          <div class="services-box">
-            <div class="services-img" data-aos="fade-up">
+          <div class="services__box">
+            <div class="services__img" data-aos="fade-up">
               <img src="../images/cursos.jpg" alt="Cursos online" />
             </div>
-            <div class="services-box__info">
+            <div class="services__info">
               <h3>Cursos online</h3>
               <p>Una serie de <strong>cursos online</strong> que podrás aplicar a tu ritmo y te ayudarán a tener una <strong>mejor organización diaria</strong>. Podrás acceder a ellos cuando quieras.</p>
             </div>
@@ -88,11 +85,11 @@
             </div>
           </div>
           <!-- Service 3 -->
-          <div class="services-box">
-            <div class="services-img" data-aos="fade-up">
+          <div class="services__box">
+            <div class="services__img" data-aos="fade-up">
               <img src="../images/plantillas.jpg" alt="Plantillas útiles" />
             </div>
-            <div class="services-box__info">
+            <div class="services__info">
               <h3>Plantillas útiles</h3>
               <p>Estas plantillas te ayudarán a <strong>organizar tus finanzas</strong>, tus <strong>vacaciones</strong>, tu <strong>trabajo</strong> y <strong>tu vida</strong> en general. Y todo esto te lo ofrezco ¡totalmente gratis!</p></div>
             <div>
@@ -104,9 +101,9 @@
       <!-- Method section -->
       <section class="container method">
         <h2>¿Cómo te ayudaré?</h2>
-        <div class="method-grid">
+        <div class="method__grid">
           <!-- Step 1 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>1.</span>
             <div class="method__text">
               <h3>Me cuentas lo que necesitas</h3>
@@ -114,7 +111,7 @@
             </div>
           </div>
           <!-- Step 2 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>2.</span>
             <div class="method__text">
               <h3>Busco las herramientas indicadas</h3>
@@ -122,7 +119,7 @@
             </div>
           </div>
           <!-- Step 3 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>3.</span>
             <div class="method__text">
               <h3>Te ayudo a aprender y aplicar</h3>
@@ -130,7 +127,7 @@
             </div>
           </div>
           <!-- Step 4 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>4.</span>
             <div class="method__text">
               <h3>Sigo tu avance y ajustamos</h3>
@@ -145,7 +142,7 @@
           <div class="col formSection__col1">
             <h2>¿Ya te has convencido?</h2>
             <p>Déjame darte las <strong>herramientas</strong> y el <strong>acompañamiento</strong> necesario para poder ordenar y <strong>planificar tu día a día</strong>.</p>
-            <div class="form__img">
+            <div class="formSection-img">
               <img src="../images/contact-form.jpg" alt="Ponte en contacto" />
             </div>
           </div>
@@ -171,16 +168,16 @@
     <!-- Footer start -->
     <footer class="footer">
       <!-- Main footer start -->
-      <section class="container row footer__main">
+      <section class="container row footerSection">
         <!-- Logo column -->
-        <div class="col footer__col1">
+        <div class="col footerSection__col1">
           <a href="../index.html"
             ><img src="../images/SUD_logo_footer.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" />
             <p>Digitaliza tu vida</p></a
           >
         </div>
         <!-- Menu column -->
-        <div class="col footer__col2">
+        <div class="col footerSection__col2">
           <h3>Más información</h3>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -191,9 +188,9 @@
           </ul>
         </div>
         <!-- Social links column -->
-        <div class="col footer__col3">
+        <div class="col ">
           <h3>Mis canales</h3>
-          <ul class="footer__socials">
+          <ul class="footerSection__socials">
             <a href="#" target="_blank" title="Instagram">
               <li>
                 <i class="fa-brands fa-instagram"></i>
@@ -214,7 +211,7 @@
       </section>
       <!-- Main footer end -->
       <!-- Sub-footer start-->
-      <section class="col footer__sub">
+      <section class="col footerSub">
         <p>
           Diseño y desarrollo •
           <a href="https://www.linkedin.com/in/nicochiari/" target="_blank">Nico Chiari</a>

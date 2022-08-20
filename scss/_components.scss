@@ -5,7 +5,7 @@ $components: (benefits, services);
   .#{$componente} {
     @include component;
   }
-  .#{$componente}-grid {
+  .#{$componente}__grid {
     display: grid;
     grid-gap: 7rem;
     grid-template-rows: repeat(3, auto);
@@ -19,15 +19,15 @@ $components: (benefits, services);
       grid-gap: 3rem;
     }
   }
-  .#{$componente}-box {
+  .#{$componente}__box {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
-  .#{$componente}-img {
+  .#{$componente}__img {
     text-align: center;
   }
-  .#{$componente}-box__info {
+  .#{$componente}__info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -38,7 +38,7 @@ $components: (benefits, services);
 .method {
   @include component;
 }
-.method-grid {
+.method__grid {
   display: grid;
   grid-gap: 3rem;
   grid-template-rows: repeat(4, auto);
@@ -54,7 +54,7 @@ $components: (benefits, services);
     }
   }
 }
-.method-box {
+.method__box {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -131,6 +131,6 @@ $components: (benefits, services);
   display: flex;
   flex-direction: column;
 }
-.form__img {
+.formSection-img {
   text-align: center;
 }

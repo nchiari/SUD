@@ -18,7 +18,7 @@
     <!-- Header start -->
     <header class="header">
       <!-- Nav menu -->
-      <nav class="navbarIndex">
+      <nav class="nav--index">
         <div class="container">
           <div class="nav-container">
             <!-- Logo header -->
@@ -30,17 +30,14 @@
               <li class="nav-item"><a href="./pages/cursos.html" class="nav-link">Cursos</a></li>
               <li class="nav-item"><a href="./pages/sobre-mi.html" class="nav-link">Sobre mi</a></li>
               <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+              <li class="nav-item">
+                <a href="./pages/contacto.html" class="nav-link"><button>Reserva una cita</button></a>
+              </li>
             </ul>
             <div class="hamburger">
               <div class="bar"></div>
               <div class="bar"></div>
               <div class="bar"></div>
-            </div>
-            <!-- Call to action button -->
-            <div class="navbar-button">
-              <a href="./pages/contacto.html">
-                <button>Reserva una cita</button>
-              </a>
             </div>
           </div>
         </div>
@@ -54,7 +51,7 @@
               <h1>Optimiza tu vida y gana tiempo para tí</h1>
               <p>Te doy las herramientas digitales necesarias para optimizar tus actividades diarias, que te ayudarán a vivir con menos preocupaciones y disfrutar más de tu tiempo.</p>
               <!-- Hero button -->
-              <div class="heroCTA">
+              <div>
                 <a href="./pages/servicios.html"><button>¿Cómo te ayudaré?</button></a>
               </div>
             </div>
@@ -71,12 +68,12 @@
       <!-- Benefits section -->
       <section class="container benefits">
         <h2>¿Cómo te ayudaré?</h2>
-        <div class="benefits-grid">
-          <div class="benefits-box">
-            <div class="benefits-img" data-aos="fade-up">
+        <div class="benefits__grid">
+          <div class="benefits__box">
+            <div class="benefits__img" data-aos="fade-up">
               <img src="./images/planning.jpg" alt="Planifica tu semana y gana tiempo" />
             </div>
-            <div class="benefits-box__info">
+            <div class="benefits__info">
               <h3>Planifica tu semana sin perder tiempo</h3>
               <p>
                 Nos liamos con las tareas diarias, nos sentamos a pensar qué atacar primero, y <strong>acabamos sin hacer nada</strong>. ¿Por qué no mejor <strong>planificar una semana</strong> entera? Éste es el <strong>secreto</strong> para ganar más tiempo
@@ -84,11 +81,11 @@
               </p>
             </div>
           </div>
-          <div class="benefits-box">
-            <div class="benefits-img" data-aos="fade-up">
+          <div class="benefits__box">
+            <div class="benefits__img" data-aos="fade-up">
               <img src="./images/organizing.jpg" alt="Orden y organización en tus actividades diarias" />
             </div>
-            <div class="benefits-box__info">
+            <div class="benefits__info">
               <h3>Trabajamos los dos juntos en equipo</h3>
               <p>
                 No tengo la <strong>fórmula de la felicidad</strong>, pero <strong>la buscaremos juntos</strong>. No creo planes genéricos, sino que <strong>adapto mi servicio a tus necesidades</strong> para que le puedas
@@ -96,11 +93,11 @@
               </p>
             </div>
           </div>
-          <div class="benefits-box">
-            <div class="benefits-img" data-aos="fade-up">
+          <div class="benefits__box">
+            <div class="benefits__img" data-aos="fade-up">
               <img src="./images/apps.jpg" alt="La información al alcance de tu mano" />
             </div>
-            <div class="benefits-box__info">
+            <div class="benefits__info">
               <h3>La información al alcance de tu mano</h3>
               <p>
                 Muchas veces damos por sentado lo que tenemos <strong>al alcance de nuestras manos</strong>. Todas las <strong>herramientas digitales</strong> que te pueden ayudar a <strong>mejorar tu calidad de vida</strong> se encuentran en tu móvil y en tu
@@ -114,9 +111,9 @@
       <!-- Method section -->
       <section class="container method">
         <h2>Un plan hecho a medida</h2>
-        <div class="method-grid">
+        <div class="method__grid">
           <!-- Step 1 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>1.</span>
             <div class="method__text">
               <h3>Me cuentas lo que necesitas</h3>
@@ -124,7 +121,7 @@
             </div>
           </div>
           <!-- Step 2 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>2.</span>
             <div class="method__text">
               <h3>Busco las herramientas indicadas</h3>
@@ -132,7 +129,7 @@
             </div>
           </div>
           <!-- Step 3 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>3.</span>
             <div class="method__text">
               <h3>Te ayudo a aprender y aplicar</h3>
@@ -140,7 +137,7 @@
             </div>
           </div>
           <!-- Step 4 -->
-          <div class="method-box" data-aos="flip-up">
+          <div class="method__box" data-aos="flip-up">
             <span>4.</span>
             <div class="method__text">
               <h3>Sigo tu avance y ajustamos</h3>
@@ -155,7 +152,7 @@
           <div class="col formSection__col1">
             <h2>¡Empieza ahora!</h2>
             <p>Ponte en contacto conmigo y reserva tu primer cita <strong>totalmente gratis</strong>.</p>
-            <div class="form__img">
+            <div class="formSection-img">
               <img src="./images/contact-form.jpg" alt="Ponte en contacto" />
             </div>
           </div>
@@ -182,16 +179,16 @@
     <!-- Footer start -->
     <footer class="footer">
       <!-- Main footer start -->
-      <section class="container row footer__main">
+      <section class="container row footerSection">
         <!-- Logo column -->
-        <div class="col footer__col1">
+        <div class="col footerSection__col1">
           <a href="./index.html"
             ><img src="./images/SUD_logo_footer.png" alt="SUD • Digitaliza tu vida" title="SUD • Digitaliza tu vida" />
             <p>Digitaliza tu vida</p></a
           >
         </div>
         <!-- Menu column -->
-        <div class="col footer__col2">
+        <div class="col footerSection__col2">
           <h3>Más información</h3>
           <ul>
             <li><a href="./index.html">Inicio</a></li>
@@ -202,9 +199,9 @@
           </ul>
         </div>
         <!-- Social links column -->
-        <div class="col footer__col3">
+        <div class="col">
           <h3>Mis canales</h3>
-          <ul class="footer__socials">
+          <ul class="footerSection__socials">
             <a href="#" target="_blank" title="Instagram">
               <li>
                 <i class="fa-brands fa-instagram"></i>
@@ -225,7 +222,7 @@
       </section>
       <!-- Main footer end -->
       <!-- Sub-footer start-->
-      <section class="col footer__sub">
+      <section class="col footerSub">
         <p>
           Diseño y desarrollo •
           <a href="https://www.linkedin.com/in/nicochiari/" target="_blank">Nico Chiari</a>
