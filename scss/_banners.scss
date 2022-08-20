@@ -44,7 +44,7 @@ $bannerMobile: (
   flex-direction: column;
   gap: 1rem;
   @media (min-width: $bp-tablet) {
-    width: 50%;
+    width: 40%;
   }
   @media (min-width: $bp-mobile) {
     width: 70%;

@@ -381,7 +381,7 @@ form {
 }
 @media (min-width: 1024px) {
   .bannerText {
-    width: 50%;
+    width: 40%;
   }
 }
 @media (min-width: 786px) {
