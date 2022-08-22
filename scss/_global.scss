@@ -6,6 +6,9 @@
 }
 
 /* Main styles */
+header {
+  grid-area: header;
+}
 body {
   background-color: $color-bg;
   font-family: $font-body;
@@ -24,7 +27,6 @@ body {
     font-size: 1rem;
   }
 }
-
 p {
   font-size: 1rem;
   line-height: 1.6rem;
@@ -43,7 +45,7 @@ main {
 }
 
 h1 {
-  font-family: $font-headings;
+  font-family: $font-h;
   font-weight: 800;
   font-size: 2rem;
   line-height: 2rem;
@@ -55,7 +57,7 @@ h1 {
 }
 
 h2 {
-  font-family: $font-headings;
+  font-family: $font-h;
   font-weight: 800;
   font-size: 1.7rem;
   color: $color-h;
@@ -65,7 +67,7 @@ h2 {
 }
 
 h3 {
-  font-family: $font-headings;
+  font-family: $font-h;
   font-weight: 700;
   font-size: 1.3rem;
   color: $color-h;
@@ -104,14 +106,17 @@ textarea {
 a {
   text-decoration: none;
 }
-article {
-  grid-area: form;
-}
-form {
-  font-family: $font-body;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #2a3844;
+footer {
+  grid-area: footer;
+  @include footer-shadow(45deg);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
 }
 
 /* Main containers styles */

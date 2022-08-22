@@ -1,6 +1,7 @@
 // Componentes maps
 $components: (benefits, services);
 
+/* Benefits and Services cards (Index and Servicios pages) */
 @each $componente in $components {
   .#{$componente} {
     @include component;
@@ -34,7 +35,7 @@ $components: (benefits, services);
   }
 }
 
-/* Method styles */
+/* 4 steps method list (Index and Servicios pages) */
 .method {
   @include component;
 }
@@ -62,7 +63,7 @@ $components: (benefits, services);
   span {
     font-size: 1.8rem;
     font-weight: 900;
-    font-family: $font-headings;
+    font-family: $font-h;
     background-color: $color-h;
     color: #fff;
     padding: 0.8rem;
@@ -75,10 +76,73 @@ $components: (benefits, services);
   gap: 0.7rem;
 }
 
-/* Default form section */
-.form {
-  grid-area: form;
+/* Courses cards (Crusos page) */
+.courses {
+  @include component;
 }
+.courses__grid {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-rows: repeat(4, auto);
+  @media (min-width: $bp-mobile) {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    align-items: flex-start;
+  }
+}
+.courses__box {
+  display: block;
+}
+.courses__box__img {
+  img {
+    width: 100%;
+    border-radius: $radius;
+  }
+  @media (min-width: $bp-mobile) {
+    height: 100%;
+  }
+}
+.courses__box__title {
+  padding: 1rem 0;
+}
+.courses__box__info {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ededed;
+}
+.courses__box__price {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* About me section (Sobre mi page) */
+.aboutMe {
+  @include component;
+  align-items: flex-start;
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+  }
+}
+.aboutMe__col1 {
+  text-align: center;
+  img {
+    border-radius: $radius;
+  }
+  @media (min-width: $bp-tablet) {
+    width: 50%;
+  }
+}
+.aboutMe__col2 {
+  gap: 2rem;
+  @media (min-width: $bp-tablet) {
+    gap: 2rem;
+    width: 50%;
+  }
+}
+
+/* Form section (all pages) */
 .formSection {
   flex-direction: column;
   align-items: flex-start;
@@ -111,7 +175,7 @@ $components: (benefits, services);
   }
 }
 .formSection__col2 {
-  padding: 1em 1rem;
+  padding: 1rem 1rem;
   @include footer-shadow(-45deg);
   border-radius: $radius;
   @include container-shadow();
@@ -131,6 +195,6 @@ $components: (benefits, services);
   display: flex;
   flex-direction: column;
 }
-.formSection-img {
+.formSection__img {
   text-align: center;
 }

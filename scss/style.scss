@@ -1,7 +1,5 @@
-/*
-SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
-© Nicolás Chiari 2022
-*/
+// SCSS SUD - Proyecto Coderhouse Desarrollo Web
+// © Nicolás Chiari 2022
 
 // Partials
 @import "variables";
@@ -9,84 +7,5 @@ SCSS y CSS SUD - Proyecto Coderhouse Desarrollo Web
 @import "global";
 @import "navbar";
 @import "banners";
-
-/* Header styles */
-.header {
-  grid-area: header;
-}
-
-/* Common components */
 @import "components";
-
-/* Index page styles */
-@import "index";
-
-/* Sobre mi page styles */
-.aboutMe {
-  @include component;
-  align-items: flex-start;
-  @media (min-width: $bp-tablet) {
-    flex-direction: row;
-  }
-}
-.aboutMe__col1 {
-  text-align: center;
-  img {
-    border-radius: $radius;
-  }
-  @media (min-width: $bp-tablet) {
-    width: 50%;
-  }
-}
-.aboutMe__col2 {
-  gap: 2rem;
-  @media (min-width: $bp-tablet) {
-    gap: 2rem;
-    width: 50%;
-  }
-}
-
-/* Cursos page styles */
-.courses {
-  @include component;
-}
-.courses__grid {
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-rows: repeat(4, auto);
-  @media (min-width: $bp-mobile) {
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
-    align-items: flex-start;
-  }
-}
-.courses__box {
-  display: flex;
-  flex-direction: column;
-}
-.courses__box__img {
-  img {
-    width: 100%;
-    border-radius: $radius;
-  }
-  @media (min-width: $bp-mobile) {
-    height: 100%;
-  }
-}
-.courses__box__title {
-  padding: 1rem 0;
-}
-.courses__box__info {
-  padding: 1rem 0;
-  border-bottom: 1px solid #ededed;
-}
-.courses__box__price {
-  display: flex;
-  padding: 1rem 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Footer styles */
 @import "footer";

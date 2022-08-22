@@ -1,15 +1,4 @@
-.footer {
-  grid-area: footer;
-  @include footer-shadow(45deg);
-  color: #fff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  h3 {
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-}
+/* Footer styles */
 .footerSection {
   padding: 3rem 0;
   align-items: center;
@@ -24,7 +13,7 @@
 .footerSection__col1 {
   p {
     color: #fff;
-    font-family: $font-headings;
+    font-family: $font-h;
   }
 }
 .footerSection__col2 {
